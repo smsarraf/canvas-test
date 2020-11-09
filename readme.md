@@ -80,7 +80,7 @@ Example of _"create new canvas"_ implementation:
 
 If we try to read the UML diagram:
 1. User types in the console `C 10 5` (ex)
-2. The concrete command `CommandCreateNewCanvas` is created.
+2. The concrete command `CreateCanvas` is created.
 3. `CreateCanvas.execute()` creates `new Canvas(widht, heigh)`;
 4. Get the updated state of the object `Canvas`.
 5. Print the new state.

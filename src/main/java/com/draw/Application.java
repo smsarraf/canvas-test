@@ -31,17 +31,19 @@ public class Application {
     }
 
     public static void main(String[] args) {
+
+        // Default Canvas Size
+        CANVAS_MAX_HEIGHT = 50;
+        CANVAS_MAX_WIDTH = 200;
+
         try {
             if (args.length > 0) {
                 CANVAS_MAX_WIDTH = Integer.parseInt(args[0]);
                 CANVAS_MAX_HEIGHT = Integer.parseInt(args[1]);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             logger.error("Invalid Canvas height and width parameters provided.");
-        }finally {
             System.out.println("Invalid Canvas Height and Width parameters provided, set to default 200 x 50");
-            CANVAS_MAX_HEIGHT = 50;
-            CANVAS_MAX_WIDTH = 200;
         }
         Application application = new Application();
         application.run();
