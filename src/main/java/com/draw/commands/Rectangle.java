@@ -62,21 +62,21 @@ public class Rectangle extends Command {
             throw new CanvasCommandNotFoundException("Wrong Parameters! For drawing a Rectangle try 'R x1 y1 x2 y2',  example: 'R 1 1 6 3'");
         } else {
             try {
-                this.x1 = Integer.parseInt(params[1]);
-                this.y1 = Integer.parseInt(params[2]);
-                this.x2 = Integer.parseInt(params[3]);
-                this.y2 = Integer.parseInt(params[4]);
+                x1 = Integer.parseInt(params[1]);
+                y1 = Integer.parseInt(params[2]);
+                x2 = Integer.parseInt(params[3]);
+                y2 = Integer.parseInt(params[4]);
             } catch (Exception e) {
                 throw new WrongParamsException("Coordinates must be numbers! Example: 'R 1 1 9 4'");
             }
 
-            if (this.getX1() > this.getX2() || this.getY1() > this.getY2()) {
-                System.out.println("Insert Rectangle - Wrong coordinates: (" + this.getX1() + ", " + this.getY1() + ") (" + this.getX2() + ", " + this.getY2() + ")");
+            if (getX1() > getX2() || getY1() > getY2()) {
+                System.out.println("Insert Rectangle - Wrong coordinates: (" + getX1() + ", " + getY1() + ") (" + getX2() + ", " + getY2() + ")");
                 throw new WrongParamsException("The coordinates must be congruent: (x1 < x2 && y1 < y2)");
             }
 
-            if (this.getX1() <= 0 || this.getX2() > canvas.getWidth() || this.getY1() <= 0 || this.getY2() > canvas.getHeight()) {
-                System.out.println("Insert Rectangle - Wrong coordinates: (" + this.getX1() + ", " + this.getY1() + ") (" + this.getX2() + ", " + this.getY2() + ")");
+            if (getX1() <= 0 || getX2() > canvas.getWidth() || getY1() <= 0 || getY2() > canvas.getHeight()) {
+                System.out.println("Insert Rectangle - Wrong coordinates: (" + getX1() + ", " + getY1() + ") (" + getX2() + ", " + getY2() + ")");
                 throw new WrongParamsException("The coordinates must be inside the draw: (x > 0 && x <=" + canvas.getWidth() + ") && (y > 0 && y <= " + canvas.getHeight() + ")");
             }
         }

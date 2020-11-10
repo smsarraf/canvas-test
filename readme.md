@@ -92,7 +92,7 @@ The project is composed by the following packages:
 - `com.draw.exception` All _checked exceptions_ thrown by the application.
 
 ---
-###	Bucket filler "algorithm"
+###	filler "algorithm"
 The approach used for filling the area, in `BucketFill`, is as follows:
 1. Call the method which fill only one pixel (if free)
 2. Call recursively same method for the 4 adjacent pixels: x+1, y; x, y+1; x-1, y; x, y-1.

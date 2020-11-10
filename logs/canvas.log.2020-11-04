@@ -1,0 +1,27 @@
+2020-11-04 18:56:15,754 [ERROR] [main] [Application] .execute(58) | CanvasException: Weight and Height must be numbers! Example: 'C 40 20'
+WrongParamsException: Weight and Height must be numbers! Example: 'C 40 20'
+	at validate(CommandCreateNewCanvas.java:53)
+	at DrawFactoryImpl.buildCanvasCommand(CommandFactoryImpl.java:30)
+	at Application.execute(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-04 19:06:01,806 [ERROR] [main] [Application] .execute(58) | CanvasException: First create a new Canvas using 'C' command. Insert 'H' for Help.
+
+CanvasNotYetCreatedException: First create a new Canvas using 'C' command. Insert 'H' for Help.
+
+	at Line.execute(CommandLine.java:47)
+	at Application.execute(Application.java:51)
+	at Application.main(Application.java:32)
+2020-11-04 19:12:00,665 [ERROR] [main] [Application] .execute(58) | CanvasException: First create a new Canvas using 'C' command. Insert 'H' for Help.
+
+CanvasNotYetCreatedException: First create a new Canvas using 'C' command. Insert 'H' for Help.
+
+	at Line.execute(CommandLine.java:47)
+	at Application.execute(Application.java:51)
+	at Application.main(Application.java:32)
+2020-11-04 19:18:48,944 [ERROR] [main] [Application] .execute(58) | CanvasException: First create a new Canvas using 'C' command. Insert 'H' for Help.
+
+CanvasNotYetCreatedException: First create a new Canvas using 'C' command. Insert 'H' for Help.
+
+	at Line.execute(CommandLine.java:47)
+	at Application.execute(Application.java:51)
+	at Application.main(Application.java:32)

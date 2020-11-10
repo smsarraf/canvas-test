@@ -68,8 +68,8 @@ public class BucketFill extends Command {
             throw new CanvasCommandNotFoundException("Wrong Parameters! For filling an area try 'B x1 y1 color',  example: 'B 2 3 c'");
         } else {
             try {
-                this.setX(Integer.parseInt(params[1]));
-                this.setY(Integer.parseInt(params[2]));
+                setX(Integer.parseInt(params[1]));
+                setY(Integer.parseInt(params[2]));
             } catch (Exception e) {
                 throw new WrongParamsException("Coordinates must be numbers! Example: 'B 2 3 c'");
             }
@@ -78,10 +78,10 @@ public class BucketFill extends Command {
             if (color.length() > 1) {
                 throw new WrongParamsException("Wrong Parameters! Color must be a single character. Example: 'B 2 3 c'");
             }
-            this.setColor(params[3]);
+            setColor(params[3]);
 
-			if (this.getX() <= 0 || this.getX() > canvas.getWidth() || this.getY() <= 0 || this.getY() > canvas.getHeight()) {
-				System.out.println("FillBucket - Wrong coordinates: (" + this.getX() + ", " + this.getY() + ")");
+			if (getX() <= 0 || getX() > canvas.getWidth() || getY() <= 0 || getY() > canvas.getHeight()) {
+				System.out.println("FillBucket - Wrong coordinates: (" + getX() + ", " + getY() + ")");
 				throw new WrongParamsException("The coordinates must be inside the draw: (x > 0 && x <= " + canvas.getWidth() + ") && (y > 0 && y <= " + canvas.getHeight() + ")");
 			}
         }

@@ -50,7 +50,6 @@ public class Application {
     }
 
     private void run() {
-        boolean isExit = false;
         Canvas canvas = null;
         try {
             canvas = new Canvas(0, 0);
@@ -59,6 +58,7 @@ public class Application {
             System.out.println("Exception initializing Canvas: " + e.getMessage());
         }
 
+        boolean isExit = false;
         do {
             try {
                 System.out.print("Insert command: ");

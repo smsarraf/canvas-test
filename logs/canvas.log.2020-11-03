@@ -1,0 +1,17 @@
+2020-11-03 16:10:25,182 [ERROR] [main] [Application] .run(58) | CanvasException: Command not found! The line must start with letter: 'C', 'L', 'R, 'B' or 'Q' for exit.
+CommandNotFoundException: Command not found! The line must start with letter: 'C', 'L', 'R, 'B' or 'Q' for exit.
+	at CommandFactoryImpl.buildCommand(CommandFactoryImpl.java:95)
+	at Application.run(App.java:50)
+	at Application.main(App.java:33)
+2020-11-03 17:09:57,766 [ERROR] [main] [Application] .run(58) | CanvasException: The coordinates must be inside the canvas: (x > 0 && x <= 0) && (y > 0 && y <= 0)
+CommandWrongParamsException: The coordinates must be inside the canvas: (x > 0 && x <= 0) && (y > 0 && y <= 0)
+	at Canvas.validateInputNewLine(Canvas.java:128)
+	at Canvas.insertLine(Canvas.java:95)
+	at CommandLine.execute(CommandLine.java:43)
+	at Application.run(Application.java:51)
+	at Application.main(Application.java:32)
+2020-11-03 17:30:25,293 [ERROR] [main] [Application] .run(58) | CanvasException: Wrong Parameters! For creating new canvas try 'C w h',  example: 'C 40 20'
+CommandWrongParamsException: Wrong Parameters! For creating new canvas try 'C w h',  example: 'C 40 20'
+	at CommandFactoryImpl.buildCommand(CommandFactoryImpl.java:29)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)

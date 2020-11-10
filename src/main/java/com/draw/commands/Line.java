@@ -60,27 +60,27 @@ public class Line extends Command {
             throw new CanvasCommandNotFoundException("Wrong Parameters! For drawing a line try 'L x1 y1 x2 y2',  example: 'L 1 2 6 2'");
         } else {
             try {
-                this.setX1(Integer.parseInt(params[1]));
-                this.setX2(Integer.parseInt(params[3]));
-                this.setY1(Integer.parseInt(params[2]));
-                this.setY2(Integer.parseInt(params[4]));
+                setX1(Integer.parseInt(params[1]));
+                setX2(Integer.parseInt(params[3]));
+                setY1(Integer.parseInt(params[2]));
+                setY2(Integer.parseInt(params[4]));
             } catch (Exception e) {
                 throw new WrongParamsException("Coordinates must be numbers! Example: 'L 1 1 9 1'");
             }
 
-			if (this.getX1() > this.getX2() || this.getY1() > this.getY2()) {
-				System.out.println("InsertLine - Wrong coordinates: (" + this.getX1() + ", " + this.getY1() + ") (" + this.getX2() + ", " + this.getY2() + ")");
+			if (getX1() > getX2() || getY1() > getY2()) {
+				System.out.println("InsertLine - Wrong coordinates: (" + getX1() + ", " + getY1() + ") (" + getX2() + ", " + getY2() + ")");
 				throw new WrongParamsException("The coordinates must be congruent: (x1 < x2 && y1 < y2)");
 			}
 
-			if (!((this.getX1() == this.getX2() && this.getY1() != this.getY2()) || (this.getY1() == this.getY2() && this.getX1() != this.getX2()))
-					&& !(this.getX1() == this.getX2() && this.getY1() == this.getY2())) {
-				System.out.println("InsertLine - Wrong coordinates: (" + this.getX1() + ", " + this.getY1() + ") (" + this.getX2() + ", " + this.getY2() + ")");
+			if (!((getX1() == getX2() && getY1() != getY2()) || (getY1() == getY2() && getX1() != getX2()))
+					&& !(getX1() == getX2() && getY1() == getY2())) {
+				System.out.println("InsertLine - Wrong coordinates: (" + getX1() + ", " + getY1() + ") (" + getX2() + ", " + getY2() + ")");
 				throw new CanvasCommandNotYetImplementedException("You can draw only horizontal lines: (x1==x2 || y1 == y2)");
 			}
 
-			if (this.getX1() <= 0 || this.getX2() > canvas.getWidth() || this.getY1() <= 0 || this.getY2() > canvas.getHeight()) {
-				System.out.println("InsertLine - Wrong coordinates: (" + this.getX1() + ", " + this.getY1() + ") (" + this.getX2() + ", " + this.getY2() + ")");
+			if (getX1() <= 0 || getX2() > canvas.getWidth() || getY1() <= 0 || getY2() > canvas.getHeight()) {
+				System.out.println("InsertLine - Wrong coordinates: (" + getX1() + ", " + getY1() + ") (" + getX2() + ", " + getY2() + ")");
 				throw new WrongParamsException("The coordinates must be inside the draw: (x > 0 && x <= " + canvas.getWidth() + ") && (y > 0 && y <= " + canvas.getHeight() + ")");
 			}
         }

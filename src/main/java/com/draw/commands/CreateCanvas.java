@@ -20,7 +20,7 @@ public class CreateCanvas extends Command {
 	private Canvas canvas;
 
 	public CreateCanvas(Canvas canvas) {
-		name = ApplicationUtil.CMD_CREATE_CANVAS;;
+		name = ApplicationUtil.CMD_CREATE_CANVAS;
 		this.canvas = canvas;
 	}
 
@@ -50,8 +50,8 @@ public class CreateCanvas extends Command {
 			throw new WrongParamsException("Wrong Parameters! For creating new draw try 'C w h',  example: 'C 40 20'");
 		} else {
 			try {
-				this.setHeight(Integer.parseInt(params[2]));
-				this.setWeight(Integer.parseInt(params[1]));
+				setHeight(Integer.parseInt(params[2]));
+				setWeight(Integer.parseInt(params[1]));
 			} catch (Exception e) {
 				throw new WrongParamsException("Weight and Height must be numbers! Example: 'C 40 20'");
 			}

@@ -1,0 +1,158 @@
+2020-11-05 10:46:24,309 [ERROR] [main] [Application] .run(58) | CanvasException: The coordinates must be congruent: (x1 < x2 && y1 < y2)
+WrongParamsException: The coordinates must be congruent: (x1 < x2 && y1 < y2)
+	at Canvas.validateInputRectangle(Canvas.java:159)
+	at Canvas.insertRectangle(Canvas.java:137)
+	at Rectangle.execute(CommandRectangle.java:43)
+	at Application.run(Application.java:51)
+	at Application.main(Application.java:32)
+2020-11-05 10:47:51,666 [ERROR] [main] [Application] .run(58) | CanvasException: Command not found! The line must start with letter: 'C', 'L', 'R, 'B' or 'Q' for exit.
+CanvasCommandNotFoundException: Command not found! The line must start with letter: 'C', 'L', 'R, 'B' or 'Q' for exit.
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:74)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 10:47:54,631 [ERROR] [main] [Application] .run(58) | CanvasException: Command not found! The line must start with letter: 'C', 'L', 'R, 'B' or 'Q' for exit.
+CanvasCommandNotFoundException: Command not found! The line must start with letter: 'C', 'L', 'R, 'B' or 'Q' for exit.
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:74)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 10:53:57,905 [ERROR] [main] [Application] .run(58) | CanvasException: Wrong Parameters! For drawing a Rectangle try 'R x1 y1 x2 y2',  example: 'R 1 1 6 3'
+CanvasCommandNotFoundException: Wrong Parameters! For drawing a Rectangle try 'R x1 y1 x2 y2',  example: 'R 1 1 6 3'
+	at Rectangle.validateCommand(CommandRectangle.java:54)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:40)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 10:53:57,905 [ERROR] [main] [Application] .run(58) | CanvasException: Command not found! The line must start with letter: 'C', 'L', 'R, 'B' or 'Q' for exit.
+CanvasCommandNotFoundException: Command not found! The line must start with letter: 'C', 'L', 'R, 'B' or 'Q' for exit.
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:74)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 10:53:58,385 [ERROR] [main] [Application] .run(58) | CanvasException: Command not found! The line must start with letter: 'C', 'L', 'R, 'B' or 'Q' for exit.
+CanvasCommandNotFoundException: Command not found! The line must start with letter: 'C', 'L', 'R, 'B' or 'Q' for exit.
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:74)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 15:33:11,245 [ERROR] [main] [Application] .run(58) | CanvasException: Dimension for new canvas must be maximum: 200 x 50
+WrongParamsException: Dimension for new canvas must be maximum: 200 x 50
+	at Canvas.validateInputNewCanvas(Canvas.java:31)
+	at Canvas.<init>(Canvas.java:21)
+	at CreateCanvas.execute(CommandCreateNewCanvas.java:31)
+	at Application.run(Application.java:51)
+	at Application.main(Application.java:32)
+2020-11-05 15:33:31,884 [ERROR] [main] [Application] .run(58) | CanvasException: Wrong Parameters! For drawing a line try 'L x1 y1 x2 y2',  example: 'L 1 2 6 2'
+CanvasCommandNotFoundException: Wrong Parameters! For drawing a line try 'L x1 y1 x2 y2',  example: 'L 1 2 6 2'
+	at Line.validateCommand(CommandLine.java:53)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:35)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 17:15:39,749 [ERROR] [main] [Application] .run(62) | General Exception: null
+java.lang.NullPointerException
+	at BucketFill.validateCommand(CommandBucketFill.java:78)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:45)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 17:15:53,523 [ERROR] [main] [Application] .run(62) | General Exception: null
+java.lang.NullPointerException
+	at BucketFill.validateCommand(CommandBucketFill.java:78)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:45)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 17:19:13,468 [ERROR] [main] [Application] .run(62) | General Exception: null
+java.lang.NullPointerException
+	at Canvas.fillSinglePixelAndExpand(Canvas.java:176)
+	at Canvas.fillBucket(Canvas.java:158)
+	at Canvas.lambda$printCanvas$0(Canvas.java:72)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at Canvas.printCanvas(Canvas.java:63)
+	at Application.run(Application.java:53)
+	at Application.main(Application.java:32)
+2020-11-05 18:34:22,576 [ERROR] [main] [Application] .run(58) | CanvasException: The coordinates must be inside the canvas: (x > 0 && x <= 4) && (y > 0 && y <= 4)
+WrongParamsException: The coordinates must be inside the canvas: (x > 0 && x <= 4) && (y > 0 && y <= 4)
+	at Line.validateCommand(CommandLine.java:74)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:35)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 18:42:00,325 [ERROR] [main] [Application] .run(58) | CanvasException: The coordinates must be congruent: (x1 < x2 && y1 < y2)
+WrongParamsException: The coordinates must be congruent: (x1 < x2 && y1 < y2)
+	at Line.validateCommand(CommandLine.java:63)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:35)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 18:43:33,338 [ERROR] [main] [Application] .run(58) | CanvasException: The coordinates must be inside the canvas: (x > 0 && x <= 20) && (y > 0 && y <= 4)
+WrongParamsException: The coordinates must be inside the canvas: (x > 0 && x <= 20) && (y > 0 && y <= 4)
+	at BucketFill.validateCommand(CommandBucketFill.java:69)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:45)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 18:49:02,897 [ERROR] [main] [Application] .run(58) | CanvasException: The coordinates must be inside the canvas: (x > 0 && x <= 20) && (y > 0 && y <= 4)
+WrongParamsException: The coordinates must be inside the canvas: (x > 0 && x <= 20) && (y > 0 && y <= 4)
+	at BucketFill.validateCommand(CommandBucketFill.java:69)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:45)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 19:05:01,025 [ERROR] [main] [Application] .run(58) | CanvasException: Wrong Parameters! For creating new canvas try 'C w h',  example: 'C 40 20'
+WrongParamsException: Wrong Parameters! For creating new canvas try 'C w h',  example: 'C 40 20'
+	at CreateCanvas.validate(CommandCreateNewCanvas.java:42)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:30)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 19:07:48,274 [ERROR] [main] [Application] .run(58) | CanvasException: The coordinates must be inside the canvas: (x > 0 && x <= 0) && (y > 0 && y <= 0)
+WrongParamsException: The coordinates must be inside the canvas: (x > 0 && x <= 0) && (y > 0 && y <= 0)
+	at Line.validate(CommandLine.java:74)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:35)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 19:13:34,466 [ERROR] [main] [Application] .run(58) | CanvasException: No Canvas found, Please a new canvas first!
+NoCanvasException: No Canvas found, Please a new canvas first!
+	at Helper.validateCanvas(Helper.java:11)
+	at Line.validate(CommandLine.java:51)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:35)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 19:14:06,837 [ERROR] [main] [Application] .run(58) | CanvasException: You can draw only horizontal lines: (x1==x2 || y1 == y2)
+CanvasCommandNotYetImplementedException: You can draw only horizontal lines: (x1==x2 || y1 == y2)
+	at Line.validate(CommandLine.java:73)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:35)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 20:48:27,848 [ERROR] [main] [Application] .run(58) | CanvasException: No Canvas found, Please a new canvas first!
+NoCanvasException: No Canvas found, Please a new canvas first!
+	at Helper.validateCanvas(Helper.java:11)
+	at BucketFill.validate(CommandBucketFill.java:49)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:45)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-05 20:48:44,052 [ERROR] [main] [Application] .run(58) | CanvasException: No Canvas found, Please a new canvas first!
+NoCanvasException: No Canvas found, Please a new canvas first!
+	at Helper.validateCanvas(Helper.java:11)
+	at Line.validate(CommandLine.java:51)
+	at DrawFactoryImpl.buildCommand(CommandFactoryImpl.java:35)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-06 00:19:54,984 [ERROR] [main] [Application] .run(57) | Canvas Exception: No Canvas found, Please a new canvas first!
+NoCanvasException: No Canvas found, Please a new canvas first!
+	at Canvas.validateCanvas(Canvas.java:37)
+	at Line.validate(Line.java:52)
+	at DrawFactoryImpl.buildCommand(DrawFactoryImpl.java:35)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-06 00:21:51,789 [ERROR] [main] [Application] .run(57) | Canvas Exception: No Canvas found, Please a new canvas first!
+NoCanvasException: No Canvas found, Please a new canvas first!
+	at Canvas.validateCanvas(Canvas.java:37)
+	at Rectangle.validate(Rectangle.java:54)
+	at DrawFactoryImpl.buildCommand(DrawFactoryImpl.java:40)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-06 00:23:23,190 [ERROR] [main] [Application] .run(58) | Canvas Exception: No Canvas found, Please a new canvas first!
+NoCanvasException: No Canvas found, Please a new canvas first!
+	at Canvas.validateCanvas(Canvas.java:37)
+	at Line.validate(Line.java:52)
+	at DrawFactoryImpl.buildCommand(DrawFactoryImpl.java:35)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
+2020-11-06 01:11:28,841 [ERROR] [main] [Application] .run(57) | Canvas Exception: No Canvas found, Please a new canvas first!
+NoCanvasException: No Canvas found, Please a new canvas first!
+	at ApplicationUtil.isCanvasExits(ApplicationUtil.java:25)
+	at Line.validate(Line.java:52)
+	at DrawFactoryImpl.buildCommand(DrawFactoryImpl.java:35)
+	at Application.run(Application.java:50)
+	at Application.main(Application.java:32)
